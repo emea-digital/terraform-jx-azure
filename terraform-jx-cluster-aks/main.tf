@@ -22,6 +22,7 @@ data "azurerm_subscription" "current" {
 // ----------------------------------------------------------------------------
 
 resource "azurerm_resource_group" "network" {
+  count    = var.create_vn ? 1 : 0
   name     = local.network_resource_group_name
   location = var.location
 }
