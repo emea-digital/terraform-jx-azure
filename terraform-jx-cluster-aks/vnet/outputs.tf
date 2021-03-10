@@ -1,3 +1,3 @@
 output "subnet_id" {
-  value = azurerm_subnet.cluster_subnet.id
+  value = var.create_vn != true ? "" : azurerm_subnet.cluster_subnet[0].id
 }
