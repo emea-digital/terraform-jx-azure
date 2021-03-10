@@ -98,6 +98,13 @@ variable "cluster_node_resource_group_name" {
   default     = ""
   description = "Resource group name in which to provision AKS cluster nodes. The script will create a random name if this is empty"
 }
+
+variable "create_vn" {
+  type       = bool
+  default    = true
+  description = "Create the virtual netwoork and the subnet" 
+}
+
 variable "vnet_cidr" {
   type        = string
   default     = "10.8.0.0/16"
