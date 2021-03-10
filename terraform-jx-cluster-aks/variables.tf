@@ -74,8 +74,8 @@ variable "cluster_node_resource_group_name" {
   default = ""
 }
 variable "create_vn" {
-  type       = number
-  default    = 1
+  type       = bool
+  default    = true
 }
 variable "vnet_cidr" {
   type    = string

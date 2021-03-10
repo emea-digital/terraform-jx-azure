@@ -17,5 +17,5 @@ variable "location" {
   type = string
 }
 variable "create_vn" {
-  type = number
+  type = bool
 }
