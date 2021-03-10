@@ -1,5 +1,6 @@
 
 resource "azurerm_virtual_network" "cluster" {
+  count = var.create_vn != true ? 0 : 1
   name                = var.network_name
   resource_group_name = var.resource_group
   location            = var.location
@@ -7,6 +8,7 @@ resource "azurerm_virtual_network" "cluster" {
 }
 
 resource "azurerm_subnet" "cluster_subnet" {
+  count = var.create_vn != true ? 0 : 1
   name                 = var.subnet_name
   resource_group_name  = var.resource_group
   virtual_network_name = azurerm_virtual_network.cluster.name
