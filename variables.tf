@@ -100,8 +100,8 @@ variable "cluster_node_resource_group_name" {
 }
 
 variable "create_vn" {
-  type       = bool
-  default    = true
+  type       = number
+  default    = 1
   description = "Create the virtual netwoork and the subnet" 
 }
 
