@@ -68,6 +68,7 @@ module "cluster" {
   max_ml_node_count                = var.max_ml_node_count
   ml_node_size                     = var.ml_node_size
   create_vn                        = var.create_vn
+  subnet_id                        = var.subnet_id
   subnet_name                      = var.subnet_name
   subnet_cidr                      = var.subnet_cidr
   vnet_cidr                        = var.vnet_cidr

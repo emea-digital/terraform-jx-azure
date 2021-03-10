@@ -105,6 +105,12 @@ variable "create_vn" {
   description = "Create the virtual netwoork and the subnet" 
 }
 
+variable "subnet_id" {
+  type       = string
+  default    = ""
+  description = "SubnetID if create_vn is false" 
+}
+
 variable "vnet_cidr" {
   type        = string
   default     = "10.8.0.0/16"

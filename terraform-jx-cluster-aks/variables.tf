@@ -77,6 +77,12 @@ variable "create_vn" {
   type       = bool
   default    = true
 }
+
+variable "subnet_id" {
+  type       = string
+  default    = ""
+}
+
 variable "vnet_cidr" {
   type    = string
   default = "10.8.0.0/16"
