@@ -16,3 +16,6 @@ variable "subnet_name" {
 variable "location" {
   type = string
 }
+variable "create_vn" {
+  type = bool
+}
