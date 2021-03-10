@@ -66,6 +66,7 @@ module "cluster" {
 module "vnet" {
   source         = "./vnet"
   resource_group = azurerm_resource_group.network.name
+  create_vn      = var.create_vn
   vnet_cidr      = var.vnet_cidr
   subnet_cidr    = var.subnet_cidr
   network_name   = local.network_name
