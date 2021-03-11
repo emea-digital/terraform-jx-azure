@@ -46,3 +46,10 @@ resource "azurerm_role_assignment" "acrpush" {
   role_definition_name = "AcrPush"
   principal_id         = var.principal_id
 }
+
+resource "azurerm_role_assignment" "acrpull" {
+  count                = var.dev_registry == "" ? 0 : 1
+  scope                = var.dev_registry
+  role_definition_name = "AcrPull"
+  principal_id         = var.principal_id
+}
