@@ -33,3 +33,7 @@ variable "use_existing_acr_resource_group_name" {
   type        = string
   default     = null
 }
+variable "dev_registry" {
+  description = "Dev registry"
+  type        = string
+}

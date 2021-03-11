@@ -249,3 +249,11 @@ variable "storage_resource_group_name" {
   description = "Resource group to create in which to place storage accounts"
   default     = ""
 }
+
+
+
+variable "dev_registry" {
+  type        = string
+  description = "Dev registry"
+  default     = ""
+}
