@@ -72,6 +72,8 @@ module "cluster" {
   subnet_name                      = var.subnet_name
   subnet_cidr                      = var.subnet_cidr
   vnet_cidr                        = var.vnet_cidr
+  client_id                        = var.client_id
+  client_secret                    = var.client_secret
 }
 
 module "registry" {

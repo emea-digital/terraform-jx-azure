@@ -50,6 +50,7 @@ module "cluster" {
   node_resource_group_name = local.cluster_node_resource_group_name
   enable_log_analytics     = var.enable_log_analytics
   logging_retention_days   = var.logging_retention_days
+<<<<<<< HEAD
   node_count               = var.node_count
   min_node_count           = var.min_node_count
   max_node_count           = var.max_node_count
@@ -58,6 +59,10 @@ module "cluster" {
   min_ml_node_count        = var.min_ml_node_count
   max_ml_node_count        = var.max_ml_node_count
   ml_node_size             = var.ml_node_size
+=======
+  client_id                = var.client_id
+  client_secret            = var.client_secret
+>>>>>>> 25814b4 (chore: use service principal)
 }
 
 // ----------------------------------------------------------------------------

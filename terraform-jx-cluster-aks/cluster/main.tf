@@ -21,8 +21,9 @@ resource "azurerm_kubernetes_cluster" "aks" {
     network_plugin = var.cluster_network_model
   }
 
-  identity {
-    type = "SystemAssigned"
+  service_principal {
+    client_id =  var.client_id
+    client_secret = var.client_secret
   }
 
   role_based_access_control {

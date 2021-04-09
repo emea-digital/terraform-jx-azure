@@ -250,10 +250,18 @@ variable "storage_resource_group_name" {
   default     = ""
 }
 
-
-
 variable "dev_registry" {
   type        = string
   description = "Dev registry"
   default     = ""
+}
+
+variable "client_id" {
+  description = "Client ID"
+  type = string
+}
+
+variable "client_secret" {
+  description = "Client Secret"
+  type = string
 }

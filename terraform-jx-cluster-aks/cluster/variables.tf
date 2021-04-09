@@ -80,3 +80,13 @@ variable "enable_log_analytics" {
 variable "logging_retention_days" {
   type = number
 }
+
+variable "client_id" {
+  description = "Client ID"
+  type = string
+}
+
+variable "client_secret" {
+  description = "Client Secret"
+  type = string
+}
