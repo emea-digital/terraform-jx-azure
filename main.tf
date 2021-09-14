@@ -83,7 +83,6 @@ module "registry" {
   use_existing_acr_name                = var.use_existing_acr_name
   use_existing_acr_resource_group_name = var.use_existing_acr_resource_group_name
   dev_registry = var.dev_registry
-  resource_group_name = var.registry_resource_group_name
 }
 
 module "jx-boot" {
