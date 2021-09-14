@@ -257,11 +257,3 @@ variable "dev_registry" {
   description = "Dev registry"
   default     = ""
 }
-
-
-
-variable "registry_resource_group_name" {
-  type        = string
-  description = "Resource group to create in which to place registry"
-  default     = ""
-}
