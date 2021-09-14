@@ -112,12 +112,3 @@ variable "logging_retention_days" {
   default = 30
 }
 
-variable "client_id" {
-  description = "Client ID"
-  type = string
-}
-
-variable "client_secret" {
-  description = "Client Secret"
-  type = string
-}
